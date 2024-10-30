@@ -10,10 +10,12 @@ const Projects = () => (
     <h2 className="text-3xl font-bold mb-4">Projects</h2>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
       {projects.map((project, index) => (
-        <div key={index} className="p-4 border rounded">
-          <h3 className="text-xl font-semibold">{project.title}</h3>
-          <p>{project.description}</p>
-          <a href={project.link} className="text-blue-500">View on GitHub</a>
+        <div key={index} className="card w-full bg-base-100 shadow-md">
+          <div className="card-body">
+            <h3 className="card-title">{project.title}</h3>
+            <p>{project.description}</p>
+            <a href={project.link} className="link link-primary">View on GitHub</a>
+          </div>
         </div>
       ))}
     </div>
@@ -21,3 +23,4 @@ const Projects = () => (
 );
 
 export default Projects;
+

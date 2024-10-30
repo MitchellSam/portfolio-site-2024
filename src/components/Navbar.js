@@ -1,17 +1,19 @@
 import React from 'react';
 
 const Navbar = () => (
-  <nav className="flex justify-between p-4 bg-gray-900 text-white">
-    <h1 className="text-2xl font-bold">
-        <a href="#home">Mitchell Sam</a>
-    </h1>
-    <div className="flex space-x-4">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+  <div className="navbar bg-base-100 shadow-lg">
+    <div className="flex-1">
+      <a className="btn btn-ghost normal-case text-xl" href="#home">Mitchell Sam</a>
     </div>
-  </nav>
+    <div className="flex-none">
+      <ul className="menu menu-horizontal p-0">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
 );
 
 export default Navbar;
